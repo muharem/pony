@@ -68,6 +68,8 @@ function calculateUnvestedAmount(vestingData: any[], blockNumber: bigint): bigin
         ? locked - alreadyUnlocked 
         : 0n;
       
+      // its a sum, not a max
+      // https://github.com/paritytech/polkadot-sdk/blob/75dcd030700b2b45059fbd0fe4245e0d30429485/substrate/frame/vesting/src/lib.rs#L611
       totalUnvestedAmount += stillVesting;
     }
   }
