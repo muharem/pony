@@ -1,0 +1,20 @@
+{
+  "name": "ah-relay-offset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "papi"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@polkadot-api/descriptors": "file:.papi/descriptors",
+    "polkadot-api": "^2.2.2",
+    "tsx": "^4.23.12",
+    "typescript": "^6.0.3"
+  }
+}

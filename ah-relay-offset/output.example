@@ -1,0 +1,53 @@
+> RUN_SECS=60 npx tsx src/offset.ts
+   1.3s [relay] tip #32605762
+   3.8s [ah #19600252] relayParent=32605761 (relay tip unknown yet)
+   3.8s [ah #19600253] relayParent=32605761 relayTip=32605762 offset=1 tipAge=2.2s collator=14wQoa
+   3.9s [ah #19600254] relayParent=32605761 relayTip=32605762 offset=1 tipAge=2.4s collator=14wQoa
+   5.2s [relay] tip #32605763
+   6.0s [ah #19600255] relayParent=32605762 relayTip=32605763 offset=1 tipAge=0.5s collator=14wQoa
+   7.9s [ah #19600256] relayParent=32605762 relayTip=32605763 offset=1 tipAge=2.5s collator=14wQoa
+  10.0s [ah #19600257] relayParent=32605762 relayTip=32605763 offset=1 tipAge=4.5s collator=14wQoa
+  11.9s [ah #19600258] relayParent=32605763 relayTip=32605763 offset=0 tipAge=6.5s collator=14wQoa
+  12.7s [relay] tip #32605764
+  13.9s [ah #19600259] relayParent=32605763 relayTip=32605764 offset=1 tipAge=1.1s collator=14wQoa
+  15.9s [ah #19600260] relayParent=32605763 relayTip=32605764 offset=1 tipAge=3.0s collator=14wQoa
+  17.3s [relay] tip #32605765
+  18.0s [ah #19600261] relayParent=32605764 relayTip=32605765 offset=1 tipAge=0.4s collator=14wQoa
+  19.9s [ah #19600262] relayParent=32605764 relayTip=32605765 offset=1 tipAge=2.4s collator=14wQoa
+  22.0s [ah #19600263] relayParent=32605764 relayTip=32605765 offset=1 tipAge=4.4s collator=14wQoa
+  23.8s [relay] tip #32605766
+  23.9s [ah #19600264] relayParent=32605765 relayTip=32605765 offset=0 tipAge=6.4s collator=14xSXy
+  25.9s [ah #19600265] relayParent=32605765 relayTip=32605766 offset=1 tipAge=1.9s collator=14xSXy
+  27.9s [ah #19600266] relayParent=32605765 relayTip=32605766 offset=1 tipAge=3.9s collator=14xSXy
+  29.0s [relay] tip #32605767
+  30.0s [ah #19600267] relayParent=32605766 relayTip=32605767 offset=1 tipAge=0.7s collator=14xSXy
+  32.0s [ah #19600268] relayParent=32605766 relayTip=32605767 offset=1 tipAge=2.8s collator=14xSXy
+  34.1s [ah #19600269] relayParent=32605766 relayTip=32605767 offset=1 tipAge=4.8s collator=14xSXy
+  36.0s [ah #19600270] relayParent=32605767 relayTip=32605767 offset=0 tipAge=6.7s collator=14xSXy
+  38.0s [relay] tip #32605768
+  38.0s [ah #19600271] relayParent=32605767 relayTip=32605767 offset=0 tipAge=8.7s collator=14xSXy
+^C
+No offsets > 3 observed.
+
+
+RUN_SECS=60 npx tsx src/backed.ts 
+[relay #32605751] backed relayParent=32605749 offset=2 core=2
+[relay #32605752] backed relayParent=32605749 offset=3 core=6
+[relay #32605754] backed relayParent=32605751 offset=3 core=6
+[relay #32605752] backed relayParent=32605749 offset=3 core=7
+[relay #32605754] backed relayParent=32605751 offset=3 core=7
+[relay #32605754] backed relayParent=32605752 offset=2 core=2
+[relay #32605753] backed relayParent=32605750 offset=3 core=6
+[relay #32605753] backed relayParent=32605750 offset=3 core=7
+[relay #32605753] backed relayParent=32605751 offset=2 core=2
+[relay #32605753] backed relayParent=32605750 offset=3 core=6
+[relay #32605753] backed relayParent=32605750 offset=3 core=7
+[relay #32605753] backed relayParent=32605751 offset=2 core=2
+[relay #32605752] backed relayParent=32605750 offset=2 core=2
+[relay #32605755] backed relayParent=32605752 offset=3 core=6
+[relay #32605755] backed relayParent=32605752 offset=3 core=7
+[relay #32605755] backed relayParent=32605753 offset=2 core=2
+[relay #32605755] backed relayParent=32605752 offset=3 core=6
+[relay #32605755] backed relayParent=32605752 offset=3 core=7
+^C
+No offsets > 3 observed.
